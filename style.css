@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans";
+  height: 980px;
+}
+
+p {
+  text-align: center;
+}
+
+/********
+MAIN CONTAINER
+*********/
+
+#main-container {
+}
+
+#logo-img {
+  width: 200px;
+  padding: 2rem;
+}
+
+#hero-img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+#first {
+  color: hsl(0, 36%, 70%);
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+#second,
+#third {
+  color: hsl(0, 6%, 24%);
+  font-size: 3rem;
+}
+
+#third {
+  margin-bottom: 1.2rem;
+}
+
+#description {
+  max-width: 34ch;
+  line-height: 1.8rem;
+  margin: 0 auto;
+  color: hsl(0, 36%, 70%);
+  margin-bottom: 2rem;
+}
+
+#email-address-input-container {
+  position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#email-address-input {
+  font-family: "Josefin Sans";
+  outline: none;
+  margin: 0 auto;
+  width: 380px;
+  padding: 18px 20px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: hsla(0, 36%, 70%, .7);
+}
+
+#email-address-input::placeholder {
+  opacity: .8;
+}
+
+#email-address-button {
+  position: absolute;
+  z-index: 2;
+  right: 4.5rem;
+  /*Were we suppposed to make our own arrow? The .svg wasn't working for me*/
+  border: none;
+  background-color:  hsl(0, 93%, 68%);
+  color: white;
+  font-size: 2rem;
+  width: 70px;
+  border-radius: 30px;
+  padding: 7px 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 2000px;
+    height: 750px;
+  }
+
+  #hero-img {
+    position: absolute;
+    right: 0;
+    width: 40%;
+  }
+  
+  #main-container {
+    width: 32%;
+    height: 80%;
+    transform: translateY(20%);
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo-img {
+    transform: translateX(75%);
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  #first, #third {
+    margin-left: -90px;
+  }
+
+  #second {
+    margin: 10px 0;
+  }
+  
+}
